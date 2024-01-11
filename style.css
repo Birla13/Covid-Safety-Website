@@ -8,7 +8,7 @@
 body {
     padding: 0 px;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .colour {
@@ -57,13 +57,19 @@ span {
     font-size: 20px;
 }
 
+
+/* .navbar a:hover {
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 26px;
+} */
+
 #Covid-19_Awareness {
     color: #7823BB;
     /* text-align: justify; */
-    font-family: Mulish;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
     margin-top: 100px;
@@ -81,10 +87,11 @@ h1 {
 .dummy-txt {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.49);
+    margin-bottom: 20px;
 }
 
 .btn {
-    margin-top: 25px;
+    margin-top: 10 px;
     color: white;
     background-color: #870AEA;
     padding: 10px 20px;
@@ -95,7 +102,10 @@ h1 {
     border-radius: 20px;
     text-transform: uppercase;
     border-style: none;
+    box-shadow: 0px 4px 10px 0px rgb(150, 116, 154);
 }
+
+.btn:hover {}
 
 .image-1 {
     position: absolute;
@@ -178,6 +188,13 @@ h3 {
 .about-1 img {
     width: 467px;
     height: 332px;
+    transition: border-radius 2s;
+}
+
+.about-1 img:hover {
+    width: 480px;
+    height: 350px;
+    border-radius: 50%;
 }
 
 .about-one {
@@ -212,6 +229,11 @@ h3 {
 .about-2 img {
     width: 467px;
     height: 320px;
+    transition: border-radius 2s;
+}
+
+.about-2 img:hover {
+    border-radius: 50%;
 }
 
 .about-two {
@@ -219,6 +241,7 @@ h3 {
     width: 550px;
     height: 300px;
     margin: 10px;
+    margin-right: 30px;
 }
 
 #corona-1 {
@@ -442,14 +465,14 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 370px;
-    height: 153px;
+    width: 400px;
+    height: 156px;
     background-color: white;
     margin: 70px 100px 50px 100px;
 }
 
 .text {
-    width: 200px;
+    width: 210px;
 }
 
 .boxes {
@@ -462,10 +485,10 @@ h2 {
 .calling {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 10px;
-    padding: 0px 140px;
+    padding: 0px 140px 0px 100px;
 }
 
 strong {
@@ -497,6 +520,13 @@ strong {
 
 .news img {
     width: 330px;
+    height: 200px;
+    transition: width 2s, height 2s;
+}
+
+.news img:hover {
+    width: 350px;
+    height: 240px;
 }
 
 .news p {
@@ -564,6 +594,14 @@ text {
 .image svg {
     width: 30px;
     height: 30px;
+    /* transform: width 2s, height 2s, transition 2s; */
+}
+
+.image svg:hover {
+    /* width: 50px;
+    height: 50px;
+    transition: ease-out; */
+    opacity: 60%;
 }
 
 .links {
@@ -581,7 +619,9 @@ text {
     padding-bottom: 20px;
 }
 
-.link-txt p {
+.link-txt a {
+    display: block;
+    text-decoration: none;
     color: #7823BB;
     margin-bottom: 10px;
     font-size: 16px;
