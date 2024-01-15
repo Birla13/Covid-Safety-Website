@@ -45,9 +45,6 @@ span {
 
 .navbar {
     display: flex;
-    /* align-items: flex-start; Remove or adjust alignment */
-    gap: 30px;
-    /* margin-left: 600px; */
 }
 
 .navbar a {
@@ -55,14 +52,17 @@ span {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    margin: 0px 10px;
 }
 
-
-/* .navbar a:hover {
+.navbar a:hover {
     cursor: pointer;
-    font-weight: 900;
-    font-size: 26px;
-} */
+    background-color: #7823BB;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: white 2px solid;
+}
 
 #Covid-19_Awareness {
     color: #7823BB;
@@ -91,7 +91,7 @@ h1 {
 }
 
 .btn {
-    margin-top: 10 px;
+    margin-top: 15px;
     color: white;
     background-color: #870AEA;
     padding: 10px 20px;
@@ -105,7 +105,12 @@ h1 {
     box-shadow: 0px 4px 10px 0px rgb(150, 116, 154);
 }
 
-.btn:hover {}
+.btn:hover {
+    background-color: white;
+    font-weight: 600;
+    color: #870AEA;
+    border: #7823BB solid 2px;
+}
 
 .image-1 {
     position: absolute;
@@ -314,6 +319,7 @@ h3 {
     width: 50%;
     display: flex;
     flex-direction: row;
+    position: relative;
     justify-content: space-evenly;
     padding: 80px 0px;
 }
@@ -322,11 +328,43 @@ h3 {
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+    position: relative;
+    animation-name: up_to_down;
+    animation-duration: 5s;
+    bottom: 0px
+}
+
+@keyframes up_to_down {
+    0% {
+        bottom: 0px
+    }
+    50% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 0px
+    }
 }
 
 .home2 {
     display: flex;
     flex-direction: column;
+    position: relative;
+    animation-name: down_to_up;
+    animation-duration: 5s;
+    top: 0px;
+}
+
+@keyframes down_to_up {
+    0% {
+        top: 0px
+    }
+    50% {
+        top: 150px
+    }
+    100% {
+        top: 0px
+    }
 }
 
 .home {
@@ -469,6 +507,45 @@ h2 {
     height: 156px;
     background-color: white;
     margin: 70px 100px 50px 100px;
+    position: relative;
+}
+
+.box-1 {
+    position: relative;
+    animation-name: left_to_right;
+    animation-duration: 4s;
+    left: 0px;
+}
+
+.box-2 {
+    position: relative;
+    animation-name: right_to_left;
+    animation-duration: 4s;
+    right: 0px;
+}
+
+@keyframes left_to_right {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 300px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes right_to_left {
+    0% {
+        right: 0px;
+    }
+    50% {
+        right: 300px;
+    }
+    100% {
+        right: 0px;
+    }
 }
 
 .text {
