@@ -1028,6 +1028,9 @@ text {
         font-size: 20px;
         margin-bottom: 0px;
     }
+    .navbar {
+        flex-direction: column;
+    }
     .navbar a {
         font-size: 0.8rem;
     }
