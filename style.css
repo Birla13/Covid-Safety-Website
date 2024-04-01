@@ -127,7 +127,7 @@ h1 {
 .image-1 {
     position: absolute;
     right: 10%;
-    top: 14%;
+    /* top: 14%; */
     height: auto;
     width: 25vw;
 }
@@ -339,7 +339,7 @@ h3 {
 }
 
 .prev-1 {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: row;
     position: relative;
